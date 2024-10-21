@@ -17,4 +17,12 @@ func main(){
 	var h string;
 	h = "Hello World";
 	fmt.Println(h);
+
+	adam := 42;
+	fmt.Printf("42 as a binary, %b\n", adam);
+	fmt.Printf("42 as a hexadecimal, %x\n", adam);
+
+	fmt.Printf("%v \t %b \t %x\n", b, b, b);
+	fmt.Printf("%v \t %b \t %x\n", c, c, c);
+	fmt.Printf("%v \t %b \t %x\n", d, d, d);
 }
