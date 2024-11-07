@@ -8,6 +8,13 @@ import (
 
 func main() {
 	fmt.Println(time.Now());
-	fmt.Println(math.Abs(-5));
 	fmt.Println(math.Min(15, 2));
+	var number int = -5;
+	if number < 0 {
+		fmt.Println(absolute_number(number));
+	}
+}
+
+func absolute_number(number int) int {
+	return int(math.Abs(float64(number)));
 }
