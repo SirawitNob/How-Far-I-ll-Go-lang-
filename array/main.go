@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main(){
 
@@ -24,6 +27,14 @@ func main(){
 			fmt.Println("Not 1 and 2.");
 		}
 		sum += arr2[i];
+	}
+
+	t := time.Now();
+	switch {
+	case t.Hour() < 12:
+		fmt.Println("It's before noon.");
+	default:
+		fmt.Println("It's after noon.");
 	}
 
 	fmt.Println("Sum of arr2 :", sum);
