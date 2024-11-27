@@ -13,6 +13,8 @@ func main() {
 	if number < 0 {
 		fmt.Println(absolute_number(number));
 	}
+	
+	fmt.Println(math.Pi);
 }
 
 func absolute_number(number int) int {
