@@ -38,4 +38,12 @@ func main(){
 	}
 
 	fmt.Println("Sum of arr2 :", sum);
+
+	for_range_loop(arr);
+}
+
+func for_range_loop(arr [4]string){
+	for i, v := range arr {
+		fmt.Printf("index : %d, \nvalue : %s\n", i, v);
+	}
 }

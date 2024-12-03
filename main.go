@@ -6,6 +6,10 @@ import (
 	"time"
 )
 
+func init(){
+	fmt.Println("Start Initialization!");
+}
+
 func main() {
 	fmt.Println(time.Now());
 	fmt.Println(math.Min(15, 2));
